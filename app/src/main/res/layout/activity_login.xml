@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center">
+
+    <!-- Campo para el nombre de usuario -->
+
+    <!-- Campo para la contraseña -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_marginHorizontal="5dp"
+        android:layout_width="342dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:hint="Usuario"
+        android:inputType="text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="336dp"
+            android:layout_height="54dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="2dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
+
+        <!-- Icono de mostrar/ocultar contraseña -->
+        <ImageView
+            android:id="@+id/ivShowPassword"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="13dp"
+            android:contentDescription="Mostrar Contraseña"
+            android:src="@drawable/ojo_cerrado" />
+    </RelativeLayout>
+
+    <!-- Botón de login -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Iniciar Sesión" />
+
+    <!-- Botón de "Olvidé mi contraseña" -->
+    <Button
+        android:id="@+id/btnForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Olvidé mi Contraseña"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Botón de "Registrar cuenta" -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
